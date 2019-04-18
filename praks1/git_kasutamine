@@ -1,0 +1,34 @@
+* rootkasutajana:
+installi - apt install git
+*tavakasutajana:
+esmakordselt:
+
+a) seadista - määra kasutajanimi, mail ja editor
+git config --global user.name "kasutaja nimi"
+git config --global user.mail koolimeil@khk.ee
+git config --global core.editor nano
+
+b) loo kataloog, kus hakkavad asuma selle aine asjad
+mkdir -kausta nimi-
+
+c) sisene antud kausta
+cd -kaustanimi-
+
+d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas
+git init
+
+---------------------
+
+a) git remote kontroll
+git remote -v
+
+--------------------------
+põhikäsud:
+a)pane fail ülesse
+git add failinimi
+
+b) lisa kirje muudatuse kohta
+git commit -m "lühikirjelduse lause"
+
+c) lisa kaugrepositoorium
+git push -uf rsha master
